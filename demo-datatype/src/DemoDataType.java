@@ -113,7 +113,7 @@ public class DemoDataType {
         char c2 = 'A';
         System.out.println(c1 == c2); //! false, becoz Java is case sensitive
 
-        char lastName = '陳'
+        char lastName = '陳';
         System.out.println(lastName);
         // we cannot assign a bigger range of variable to smaller range of variable (by default)
         byte b40 = (byte) 128L; //"()" -> Force assignment

@@ -1,6 +1,6 @@
 public class DemoOperator {
   public static void main(String[] args){
-    // +,-,*,/,%
+    // +, -, *, /, %
     int x = 3;
     x = 6 + 9;
     int y = 5 + x - 10;
@@ -17,7 +17,7 @@ public class DemoOperator {
     System.out.println(b); // -12
 
     //divided by zero
-    int r = 10 / 0; // system error
+    // int r = 10 / 0; // system error
 
     int r2 = 0 / 10;
     System.out.println(r2);
@@ -90,11 +90,12 @@ public class DemoOperator {
 
     // comparison
     // >, <, >=, <=, ==, !=(不等於)
+    int score = 91;
     boolean isGreatA = score >= 90;
     System.out.println(isGreatA); // true
 
-    char gender = 'F'
-    boolean isFemale = gender != 'M'
+    char gender = 'F';
+    boolean isFemale = gender != 'M';
     System.out.println(isFemale); // true
   }
 }
