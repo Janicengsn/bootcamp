@@ -68,7 +68,7 @@ public class DemoOperator {
     int w = 0;
     w--;
     --w;
-    w = w - 1;
+    w = w - 1;//由右睇到左, 即將W-1寫入"W="
     w -= 1;
     System.out.println(w); // -4
 
