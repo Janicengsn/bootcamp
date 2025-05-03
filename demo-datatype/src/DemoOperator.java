@@ -20,11 +20,11 @@ public class DemoOperator {
     // int r = 10 / 0; // system error
 
     int r2 = 0 / 10;
-    System.out.println(r2);
+    System.out.println(r2); // 0
 
     // Java: int / int -> int
     int r3 = 10 / 3;
-    System.out.println(r3);
+    System.out.println(r3); // 3
     System.out.println(5 / 2); // 2
     // double / int -> double / double -> double
     System.out.println(5.0 / 2); // 2.5
@@ -51,7 +51,7 @@ public class DemoOperator {
 
     int johnAge = 64;
     boolean isElderly = johnAge >= 65; // formula / definition
-    System.out.println(isElderly);
+    System.out.println(isElderly); //false
 
     //boolean isMale = false;
     //boolean: issth or shouldsth

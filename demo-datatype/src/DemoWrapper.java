@@ -32,7 +32,7 @@ public class DemoWrapper {
     String s2 = "hello";
 
     // ! Primitives vs Wrapper Class
-    // 1. Primitives for value storage and MAth Operations ONLY.
+    // 1. Primitives for value storage and Math Operations ONLY.
     // 2. Wrapper Class has methods
     // 3. Wrapper Class NEVER use operators (>,<,>+,<=,!=,==) for comparison
     System.out.println(x1.doubleValue()); // 3.0
