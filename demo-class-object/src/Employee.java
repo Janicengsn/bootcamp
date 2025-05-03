@@ -48,6 +48,11 @@ public class Employee { // An employee has name, age and email
     System.out.println(e1.getName()); // "John"
 
     // set email, set age. get email, get age
+    e1 = e2;
+    System.out.println(e1.getName());
+    System.out.println(e2.getName());
+
+    
    
     
     
