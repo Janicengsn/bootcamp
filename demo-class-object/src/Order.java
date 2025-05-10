@@ -6,8 +6,12 @@ public class Order {
   // Alternative
   private Item[] items;
 
-  public Order() {
-    this.items = new Item[0];
+  //public Order() { ->避免空單
+    //this.items = new Item[0];
+  //}
+
+  public Order(Item item){
+    this.items = new Item[1];
   }
 
   public void add(Item newItem) {
