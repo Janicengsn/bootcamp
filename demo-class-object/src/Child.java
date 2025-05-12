@@ -37,7 +37,7 @@ public class Child {
    return this.id == child.getId();
   }
 
-  
+
 
 public static void main(String[] args) {
   Child c1 = new Child ("Leo", "Chan");
@@ -55,7 +55,13 @@ public static void main(String[] args) {
 
   Child c2 = new Child("Leo", "Wong");
   System.out.println(c2.getId()); // 6
-  System.out.println(c2.equals(new Child("Leo", "Wong")));
+
+  Child c3 = new Child ("Leo", "Wong");
+  System.out.println(c2.equals(new Child(6))); // true
+  System.out.println(c2.getFirstName().equals("Leo")); // true
+  System.out.println(c2.getLastName().equals("Wong")); // true
+
+  
 }
 
 

@@ -13,5 +13,14 @@ public class Candy {
     // print out the candy (color, number) of every students
 
     // Use loop to distribute candy
+
+    // Teacher.java -> distribute
+    // Student (應該要有candy array) -> receive(Candy candy)
+
+
+    // warrior.attack(archer)
+    // public void attack (Archer archer) {
+    // archer.deductHP(10);
+    // }
   }
 }
