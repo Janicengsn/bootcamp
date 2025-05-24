@@ -14,18 +14,18 @@ public class Shape {
   }
 
   public static void main(String[] args) {
-    System.out.println(Shape.PI); // 3.14159
+    System.out.println(Phone.PI); // 3.14159
     // ! because Shape.PI is a "final" variable, so cannot be modified.
     // Shape.PI += 1;
-    Shape.counter++;
-    System.out.println(Shape.counter); // 1
+    Phone.counter++;
+    System.out.println(Phone.counter); // 1
 
-    new Shape().counter++; // Not recommended
-    Shape.counter++; // Normal usage
-    System.out.println(Shape.counter); // 3
+    new Phone().counter++; // Not recommended
+    Phone.counter++; // Normal usage
+    System.out.println(Phone.counter); // 3
 
     // print John
-    Shape s1 = new Shape();
-    System.out.println(new Shape().getName()); // John
+    Phone s1 = new Phone();
+    System.out.println(new Phone().getName()); // John
   }
 }

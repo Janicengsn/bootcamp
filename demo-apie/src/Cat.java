@@ -21,7 +21,7 @@ public class Cat extends Animal {
   }
 
   public int getAge2() {
-    return super.getAge2() ;
+    return super.getAge() ;
   }
 
 public static void main(String[] args) {

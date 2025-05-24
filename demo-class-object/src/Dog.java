@@ -45,9 +45,9 @@ public static void main(String[] args) {
   d2.setColor("Black");
   System.out.println(d2.getColor());
 
-  Dog d1 = new Dog(); //! Why unable to generate data? coz set d1 already?
+  Dog d3 = new Dog(); //! Why unable to generate data? coz set d1 already?
   d1.setColor("White and Brown");
-  System.out.println(d1.getColor());
+  System.out.println(d3.getColor());
 
 
   d1.setBreed("Beagle");
