@@ -22,7 +22,7 @@ public class DemoLoop {
     //Step 12: No -> exit loop
 
     for (int i = 0; i < 3; i++) { // i=0,1,2
-      System.out.println("hello"); 
+      System.out.println("hello"); // hello
     }
 
     // 2^10
@@ -37,7 +37,7 @@ public class DemoLoop {
       // even number -> x % 2 == 0
       for (int i = 0; i < 11; i++) { // i=0,1,2,3,4,5,6,7,8,9,10 // !i既功用只係用黎數次數
         if(i % 2 == 0) { //even number
-          System.out.println(i);
+          System.out.println(i); // 0, 2, 4, 6, 8, 10
         }
       }
 
@@ -46,11 +46,11 @@ public class DemoLoop {
       String s2 = "bootcamp";
       int index = -1;
       for (int i = 0; i < s2.length(); i++) { // i=0,1,2,3,4,5,6,7
-        if (s2.charAt(i) == 'm') {
+        if (s2.charAt(i) == 'm') { // if i = m
           index = i;
         }
       }
-          System.out.println(index);
+          System.out.println(index); // 6
 
         // break + LOOP
         // Find the first character of 'a' in a given String, print the index of the character.
@@ -70,7 +70,7 @@ public class DemoLoop {
             if (counter >= 3) {
               break;
             }
-          System.out.println(i);
+          System.out.println(i); // 0, 5, 10
           counter++;
         }
       }
@@ -80,14 +80,14 @@ public class DemoLoop {
         String ss2 = "abcabcabc";
         for (int i = 0; i < ss2.length(); i++) {
           if (ss2.charAt(i) == 'a') {
-            System.out.println(i);
+            System.out.println(i); // 0, 3, 6
           }
         }
         for (int i = 0; i < ss2.length(); i++) {
           if (ss2.charAt(i) != 'a') {
            continue; // skip the rest of code lines, and then goes to next iteration
           }
-           System.out.println(i);
+           System.out.println(i); // 0, 3, 6
 }
 }
         }

@@ -8,17 +8,17 @@ public class DemoLiteral {
     System.out.println(s1.equals(s2)); // true, String Author determine the defintion of equals()
     System.out.println(s3.equals(s2)); // false
 
-    System.out.println(s1 == s2); // true, Literal
+    System.out.println(s1 == s2); // true, Literal(字面上)
 
     String s4 = new String("hello");
-    System.out.println(s1 == s4); // false
+    System.out.println(s1 == s4); // false, 因為new左
     String s5 = new String("hello");
-    System.out.println(s4 == s5); // false
+    System.out.println(s4 == s5); // false, coz new String already
   
   
-    String s6 = new String("hello").intern(); // put into pool
+    String s6 = new String("hello").intern(); // .intern -> put into pool
     System.out.println(s1 == s6); // true
-    System.out.println(s4 == s6); // false  
+    System.out.println(s4 == s6); // false, new String != into literial pool
 
     // integer: -128 to 127
     Integer i1 = 127;

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class DemoHashSet {
@@ -21,5 +22,25 @@ public class DemoHashSet {
     System.out.println(strings); // [John, Lucas]
 
     // isEmpty, contains, clear(), etc... same as ArrayList
+
+    // Example: ArrayList<String>, "apple", "orange", "apple", "lemon"
+    // check if duplicated value exits: true/false
+      ArrayList<String> fruits = new ArrayList<>();
+      fruits.add("apple");
+      fruits.add("orange");
+      fruits.add("apple");
+      fruits.add("lemon");
+
+    // loop + hashset + add()
+    boolean foundDuplicated = false;
+    HashSet<String> fruitSet = new HashSet<>(); // 會check duplicate, 所以比ArrayList慢
+        for (String fruit : fruits) {
+      if (!fruitSet.add(fruit)) {
+        foundDuplicated = true;
+        break;
+      }
+    }
+    System.out.println("Found duplicated fruit:" + foundDuplicated);
+
   }
 }

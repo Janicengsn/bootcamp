@@ -35,15 +35,15 @@ public class DemoArray {
     arr2[1] = 9.2;
     arr2[2] = -9.8;
     arr2[3] = 77.9;
-    System.out.println(arr2[0]);
-    System.out.println(arr2[1]);
-    System.out.println(arr2[2]);
-    System.out.println(arr2[3]);
+    System.out.println(arr2[0]); // 1.1
+    System.out.println(arr2[1]); // 9.2
+    System.out.println(arr2[2]); // -9.8
+    System.out.println(arr2[3]); // 77.9
 
     // arr2.length -> array length
     // for (int i = 0; i < 4; i++) {
     for (int i = 0; i < arr2.length; i++) {
-      System.out.println(arr2[i]);
+      System.out.println(arr2[i]); // 1.1, 9.2, -9.8, 77.9
     }
 
 
@@ -56,26 +56,26 @@ public class DemoArray {
     String[] arr4 = new String[] {"abc","def","bootcamp"};
     // for loop
     for (int i = 0; i < arr4.length; i++) { // i < 3 -> 0,1,2
-      System.out.println(arr4[i]);
+      System.out.println(arr4[i]); // abc, def, bootcamp
     }
     // for loop + if (filtering)
     // Find the strings in the array, which length > 4
     for (int i = 0; i < arr4.length; i++) {
       if (arr4[i].length() > 4) {
-        System.out.println(arr4[i]);
+        System.out.println(arr4[i]); // bootcamp
       }
     }
     // for loop + if (AND OR)
     // Print the strings in the array, which length > 4 and starts with 'b'
     for (int i = 0; i < arr4.length; i++) {
       if(arr4[i].length() > 4 && arr4[i].startsWith("b")) {
-        System.out.println(arr4[i]);
+        System.out.println(arr4[i]); // bootcamp
       }
     }
     // Print the strings in the array, which length = 3 or endsWith 'p'
     for (int i = 0; i < arr4.length; i++) {
       if(arr4[i].length() == 3 || arr4[i].endsWith("p")) {
-        System.out.println(arr4[i]);
+        System.out.println(arr4[i]); // abc, def, bootcamp
       }
     }
     // 
@@ -88,7 +88,8 @@ public class DemoArray {
         box = arr5[i];
       }
     }
-    System.out.println(box);
+    System.out.println(box); // 1500
+
    // Print the min value in the array.
     int min = arr5[0];
     for (int i = 0; i < arr5.length; i++) {
@@ -96,7 +97,7 @@ public class DemoArray {
       min = arr5[i];
     }
    }
-    System.out.println(min);
+    System.out.println(min); // -100
 
 
     //swap
